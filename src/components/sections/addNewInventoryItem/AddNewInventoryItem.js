@@ -258,10 +258,6 @@ const AddNewInventoryItem = ({ setShowList, setDisplayAdd }) => {
         <div className="addInventoryItem__button">
           <Link
             to="/inventory"
-            onClick={() => {
-              setShowList(true);
-              setDisplayAdd(false);
-            }}
           >
             <button className="editInventoryItem__button-cancel" type="submit">
               Cancel
