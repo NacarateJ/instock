@@ -56,6 +56,7 @@ Once the tables have been created we can seed them to populate the tables with d
 
 <div align="center">
 
+https://user-images.githubusercontent.com/114256348/212584656-00db1837-90e9-461d-8b16-d0b3de33f61c.mp4
 
   </div>
 
