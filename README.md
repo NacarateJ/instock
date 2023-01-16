@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# InStock
+Instock is an Agile project to deliver a full stack Inventory Management System with a modern React and SCSS front-end communicating with a robust Express, Nodejs back-end. Source of data is a MySQL database using knex.js to interact with the db. The website is fully responsive for mobile, tablet, and desktop viewing and users can add, edit or delete both warehouses and inventory items (full CRUD operations). 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Instock is a collaborative project made by myself and three other developers. We all got to work with both front-end and back-end technologies. I was responsible for the building process and functional aspects for the following React components: Header, Add New Inventory Item and Edit Inventory Item. We all had the chance to act as the project manager using Jira Software to assign the daily tasks and making sure we were on top of the deadlines. Figma was used for the interface design.
 
-## Available Scripts
+## The Team
 
-In the project directory, you can run:
+This project was built with the collaboration of: <br>
+[Nanaya Miki](https://github.com/Lala0419) <br>
+[Hester L](https://github.com/hlai52) <br>
+[Emily Wong](https://github.com/emwong101) <br>
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack and Tools
+* HTML, SASS, JavaScript, React, React Router, Node, Express, API's , MySQL, Knex.js, Postman, Axios, Jira and Figma.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation:
+1. To install and run the project you will need to clone or dowload the Front-end file - [instock](https://github.com/NacarateJ/instock), and the Back-end file - [instock-api](https://github.com/NacarateJ/instock-api);
+2. Run ```nmp i``` to install all the required packages for the app;
+3. To start the Front-end run the command ```npm start```;
+4. To start the Back-end run the command ```npm run server```;
 
-### `npm test`
+## Environment Variables
+1. Front-end:
+Add the following variables in .env file:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```REACT_APP_API_URL=https://localhost:8080```
+  
+2. Back-end:
 
-### `npm run build`
+```DB_LOCAL_DBNAME="instock_api"```<br>
+```DB_LOCAL_USER="YOUR DB USER NAME"```<br>
+```DB_LOCAL_PASSWORD="YOUR DB PASSWORD"```<br>
+```PORT = 8080```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## To connect to DB and data seeding
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To connect the server with the databse we used a SQL query builder, knex.js. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install knex.js if it has not yet been installed:
 
-### `npm run eject`
+```npm install knex --save```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Create a new database named "instock_api" on your local machine using the [mysql client tool](https://www.mysqltutorial.org/mysql-create-database/).
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once the database has been created, run the latest migration file to build the database table. To do this run the command as follows:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```npm run migrate```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Once the tables have been created we can seed them to populate the tables with data. To do this run:
 
-## Learn More
+```npm run seed```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Demo
 
-### Code Splitting
+<div align="center">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+  </div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
